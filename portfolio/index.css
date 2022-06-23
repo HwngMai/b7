@@ -1,0 +1,78 @@
+/* start-header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.nav-item.active.home a {
+  color: #28a745 !important;
+}
+/* start-carousel */
+#carousel .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+#carousel .caption__avatar {
+  width: 150px;
+  height: 150px !important;
+  border-radius: 50%;
+}
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+}
+/* start-project */
+#project .nav {
+  justify-content: center;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #28a745;
+  border: none;
+}
+.nav-pills .nav-link {
+  color: #1a1d2d;
+  border: 1px solid #1a1d2d;
+  margin: 0 5px;
+}
+.project__list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.project__item {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.card-body{
+  border: 1px solid transparent;
+}
+.project__item:hover .card-body{
+  border: 1px solid rgb(71, 211, 71);
+  border-radius: 20px;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}
